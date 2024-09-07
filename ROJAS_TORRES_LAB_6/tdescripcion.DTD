@@ -1,0 +1,130 @@
+<!DOCTYPE TDescripcion [
+  <!ELEMENT TDescripcion (Asunto, Descripcion, Notificacion)>
+  <!ELEMENT Asunto (#PCDATA)>
+  <!ELEMENT Descripcion (#PCDATA)>
+  <!ELEMENT Notificacion (Prioridad, TipoMedio, Valor)>
+  <!ELEMENT Prioridad (#PCDATA)>
+  <!ELEMENT TipoMedio (#PCDATA)>
+  <!ELEMENT Valor (#PCDATA)>
+]>
+------XMLOK___
+<TDescripcion>
+  <Asunto>Otro ejemplo</Asunto>
+  <Descripcion>Descripción del otro ejemplo</Descripcion>
+  <Notificaciones>
+    <Notificacion>
+      <Prioridad>Baja</Prioridad>
+      <TipoMedio>Correo Electronico</TipoMedio>
+      <Valor>m.t@escuela.com</Valor>
+    </Notificacion>
+    <Notificacion>
+      <Prioridad>Media</Prioridad>
+      <TipoMedio>Correo Fisico</TipoMedio>
+      <Valor>cll55</Valor>
+    </Notificacion>
+  </Notificaciones>
+</TDescripcion>
+
+<TDescripcion>
+  <Asunto>Ejemplo de Asunto</Asunto>
+  <Descripcion>Descripción del ejemplo</Descripcion>
+  <Notificaciones>
+    <Notificacion>
+      <Prioridad>Alta</Prioridad>
+      <TipoMedio>Correo Electronico</TipoMedio>
+      <Valor>correo@example.com</Valor>
+    </Notificacion>
+    <Notificacion>
+      <Prioridad>Baja</Prioridad>
+      <TipoMedio>Web</TipoMedio>
+      <Valor>https://www.ejemplo.com</Valor>
+    </Notificacion>
+  </Notificaciones>
+</TDescripcion>
+
+
+-------XMLNOOK---
+<TDescripcion>
+  <Asunto>Otro ejemplo</Asunto>
+  <Descripcion>Descripción del otro ejemplo</Descripcion>
+  <Notificaciones>
+    <Notificacion>
+      <Prioridad>Baja</Prioridad>
+      <TipoMedio>Correo Electronico</TipoMedio>
+      <Valor>m.t@escuela.com</Valor>
+    </Notificacion>
+    <Notificacion>
+      <Prioridad>Media</Prioridad>
+      <Valor>cll55</Valor>
+    </Notificacion>
+  </Notificaciones>
+</TDescripcion>
+
+<TDescripcion>
+  <Asunto>Ejemplo Incorrecto 1</Asunto>
+  <Descripcion>Descripción incorrecta</Descripcion>
+  <Notificacion>
+      <Prioridad>Media</Prioridad>
+      <TipoMedio>Correo Fisico</TipoMedio>
+      <Valor>cll55</Valor>
+    </Notificacion>
+</TDescripcion>
+
+<TDescripcion>
+  <Asunto>Ejemplo Incorrecto 1</Asunto>
+  <Descripcion>Descripción incorrecta</Descripcion>
+</TDescripcion>
+
+
+
+
+
+
+
+-----------prueba 3 cursos mas---
+<Course Number="CS310" Enrollment="150">
+    <Title>Artificial Intelligence</Title>
+    <Description>Introduction to AI concepts and applications.</Description>
+    <Instructors>
+        <Professor>
+            <First_Name>John</First_Name>
+            <Last_Name>Valentina</Last_Name>
+        </Professor>
+    </Instructors>
+    <Prerequisites>
+        <Prereq>CS290</Prereq>
+    </Prerequisites>
+</Course>
+
+<Course Number="HIST331" Enrollment="40">
+    <Title>Historia del Siglo XX</Title>
+    <Description>Exploración de eventos y cambios significativos del siglo XX.</Description>
+    <Instructors>
+        <Professor>
+            <First_Name>Daniel</First_Name>
+            <Last_Name>Martínez</Last_Name>
+        </Professor>
+    </Instructors>
+    <Prerequisites>
+        <Prereq>HIST200</Prereq>
+    </Prerequisites>
+</Course>
+
+<Course Number="ENG100" Enrollment="20">
+    <Title>Taller de Escritura Avanzada</Title>
+    <Description>Enfoque en técnicas y estilos avanzados de escritura.</Description>
+    <Instructors>
+        <Professor>
+            <First_Name>Juan</First_Name>
+            <Last_Name>Smith</Last_Name>
+        </Professor>
+        <Lecturer>
+            <First_Name>Mateo</First_Name>
+            <Last_Name>Williams</Last_Name>
+        </Lecturer>
+    </Instructors>
+    <Prerequisites>
+        <Prereq>ENG110</Prereq>
+    </Prerequisites>
+</Course>
+

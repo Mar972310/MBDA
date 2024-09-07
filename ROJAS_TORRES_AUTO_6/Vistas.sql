@@ -1,0 +1,6 @@
+CREATE OR REPLACE VIEW ViewID_Event AS
+SELECT id_e FROM event;
+
+SELECT * FROM ViewID_Event;
+
+DROP VIEW ViewID_Event;
